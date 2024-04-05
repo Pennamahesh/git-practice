@@ -16,5 +16,10 @@ resource "aws_s3_bucket" "maheshh" {
   
 }
 resource "aws_s3_bucket" "name" {
+    bucket="chethan12345"
+    tags = {
+      Name="chethan"
+      environment="prod"
+    }
   
 }
