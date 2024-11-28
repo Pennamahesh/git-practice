@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: mahesh
+  name: mahesh
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: mahesh
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: mahesh
+    spec:
+      containers:
+      - image: nginx:latest
+        name: nginx
+
