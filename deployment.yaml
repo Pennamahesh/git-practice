@@ -18,6 +18,7 @@ spec:
         app: mahesh
     spec:
       containers:
-      - image: nginx:latest
+      - image: maheshpenna96/votingapp:vote
         name: nginx
-
+      imagePullSecrets:
+      - name: docker-pwd
